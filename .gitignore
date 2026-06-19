@@ -1,0 +1,9 @@
+.vs/
+Debug/
+x64/
+*.user
+*.suo
+*.db
+*.ipch
+*.pdb
+*.obj
