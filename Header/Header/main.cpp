@@ -1,5 +1,5 @@
-#include "Physics.h"
 #include "Vector3.h"
+#include "Physics.h"
 #include <iostream>
 
 int main()
@@ -30,5 +30,21 @@ int main()
     std::cout << "result2 X: " << result2.x << '\n';
     std::cout << "result2 Y: " << result2.y << '\n';
     std::cout << "result2 Z: " << result2.z << '\n';
+
+    Vector3 velocity;
+    velocity.x = 5;
+    velocity.y = 15;
+    velocity.z = 25;
+
+    Vector3 acceleration;
+    acceleration.x = 1;
+    acceleration.y = 2;
+    acceleration.z = 3;
+
+    double dt = 1;
+
+
+
+    Vector3 newVelocity = updateVelocity(velocity, acceleration, dt);
 
 }

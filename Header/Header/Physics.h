@@ -1,4 +1,5 @@
-//#pragma once
+#pragma once
+#include "Vector3.h"
 double calculateForce(double mass, double acceleration);
 
 Vector3 calculateAcceleration(Vector3 force, double mass);
